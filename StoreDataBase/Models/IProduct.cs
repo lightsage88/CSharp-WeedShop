@@ -1,14 +1,15 @@
 using System;
+using StoreDataBase.Models;
 
 namespace StoreDataBase.Models
 {
     public interface IProduct
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime Created { get; set; }
-        public decimal Price {get; set;}
+         int Id { get; set; }
+         string Name { get; set; }
+         DateTime Created { get; set; }
+         decimal Price {get; set;}
         //TODO: could I use an enum for types? flower, concentrate, topicals, prerolls, etc?
-        public string Type { get; set; }
+         string Type { get; set; }
     }
 }
